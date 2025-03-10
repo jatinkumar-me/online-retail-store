@@ -32,7 +32,7 @@ public class CustomerController {
 	}
 
 	@PutMapping("/customer/{customerId}")
-	public ResponseEntity<Customer> updateCustomer( @RequestBody Customer customer) {
+	public ResponseEntity<Customer> updateCustomer(@RequestBody Customer customer) {
 		Customer updatedCustomer = customerService.updateCustomer(customer);
 		return ResponseEntity.ok(updatedCustomer);
 	}
