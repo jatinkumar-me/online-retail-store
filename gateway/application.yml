@@ -1,0 +1,24 @@
+server:
+  port: 8080
+management:
+  endpoint.gateway.enabled: true
+  endpoints.web.exposure.include: gateway
+spring:
+  application.name: gateway-service
+  cloud:
+    gateway:
+      globalcors:
+        cors-configurations:
+          '[/**]':
+            allowedOriginPatterns: "*"
+            allowedMethods:
+              - GET
+              - POST
+              - PUT
+              - DELETE
+              - OPTIONS
+              - PATCH
+            allowedHeaders:
+              - "*"
+            allowCredentials: true
+      discovery.locator.enabled: true
