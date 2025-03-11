@@ -1,8 +1,13 @@
-package com.wipro.entity;
+package com.aditya.model;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
 
-import jakarta.persistence.*;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
 
 @Entity
 public class LineItem {
@@ -84,8 +89,5 @@ public class LineItem {
 	public void setOrder(Order order) {
 		this.order = order;
 	}
-    
-	
-    
     
 }

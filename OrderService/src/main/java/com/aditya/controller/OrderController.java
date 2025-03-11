@@ -1,5 +1,4 @@
-package com.wipro.controller;
-
+package com.aditya.controller;
 
 import java.util.List;
 
@@ -15,9 +14,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.wipro.entity.LineItem;
-import com.wipro.entity.Order;
-import com.wipro.service.OrderService;
+import com.aditya.model.LineItem;
+import com.aditya.model.Order;
+import com.aditya.service.OrderService;
 
 @RestController
 @RequestMapping("/Api/order")
@@ -81,3 +80,4 @@ public class OrderController {
         return new ResponseEntity<>(updatedLineItem, HttpStatus.OK);
     }
 }
+
