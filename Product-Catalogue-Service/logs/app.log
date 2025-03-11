@@ -1,0 +1,239 @@
+2025-03-11 09:48:38 - HV000001: Hibernate Validator 8.0.1.Final
+2025-03-11 09:48:38 - Starting ProductCatalogueServiceApplication using Java 21.0.3 with PID 18084 (D:\Backend_Capstone\Product-Catalogue-Service\target\classes started by VI20555791 in D:\Backend_Capstone\Product-Catalogue-Service)
+2025-03-11 09:48:38 - No active profile set, falling back to 1 default profile: "default"
+2025-03-11 09:48:38 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-03-11 09:48:38 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-03-11 09:48:39 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-11 09:48:39 - Finished Spring Data repository scanning in 233 ms. Found 1 JPA repository interface.
+2025-03-11 09:48:40 - BeanFactory id=a8f6f847-6363-36e2-8448-0d0072e13ba2
+2025-03-11 09:48:40 - Tomcat initialized with port 9092 (http)
+2025-03-11 09:48:40 - Initializing ProtocolHandler ["http-nio-9092"]
+2025-03-11 09:48:40 - Starting service [Tomcat]
+2025-03-11 09:48:40 - Starting Servlet engine: [Apache Tomcat/10.1.33]
+2025-03-11 09:48:40 - Initializing Spring embedded WebApplicationContext
+2025-03-11 09:48:40 - Root WebApplicationContext: initialization completed in 2833 ms
+2025-03-11 09:48:41 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-11 09:48:41 - HHH000412: Hibernate ORM core version 6.6.2.Final
+2025-03-11 09:48:41 - HHH000026: Second-level cache disabled
+2025-03-11 09:48:41 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-11 09:48:41 - HikariPool-1 - Starting...
+2025-03-11 09:48:42 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@24bbe5d8
+2025-03-11 09:48:42 - HikariPool-1 - Start completed.
+2025-03-11 09:48:42 - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-11 09:48:42 - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-03-11 09:48:42 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-11 09:48:43 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-11 09:48:43 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-11 09:48:44 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-11 09:48:44 - LiveReload server is running on port 35729
+2025-03-11 09:48:45 - Eureka HTTP Client uses RestClient.
+2025-03-11 09:48:45 - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-03-11 09:48:45 - Setting initial instance status as: STARTING
+2025-03-11 09:48:45 - Initializing Eureka in region us-east-1
+2025-03-11 09:48:45 - Resolving eureka endpoints via configuration
+2025-03-11 09:48:45 - Disable delta property : false
+2025-03-11 09:48:45 - Single vip registry refresh property : null
+2025-03-11 09:48:45 - Force full registry fetch : false
+2025-03-11 09:48:45 - Application is null : false
+2025-03-11 09:48:45 - Registered Applications size is zero : true
+2025-03-11 09:48:45 - Application version is -1: true
+2025-03-11 09:48:45 - Getting all instance registry info from the eureka server
+2025-03-11 09:48:46 - The response status is 200
+2025-03-11 09:48:46 - Starting heartbeat executor: renew interval is: 30
+2025-03-11 09:48:46 - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-03-11 09:48:46 - Discovery Client initialized at timestamp 1741666726070 with initial instances count: 0
+2025-03-11 09:48:46 - Registering application PRODUCT-CATALOGUE-SERVICE with eureka with status UP
+2025-03-11 09:48:46 - Saw local status change event StatusChangeEvent [timestamp=1741666726079, current=UP, previous=STARTING]
+2025-03-11 09:48:46 - DiscoveryClient_PRODUCT-CATALOGUE-SERVICE/APL-52NHQ04.wipro.com:Product-Catalogue-Service:9092: registering service...
+2025-03-11 09:48:46 - Starting ProtocolHandler ["http-nio-9092"]
+2025-03-11 09:48:46 - Tomcat started on port 9092 (http) with context path '/'
+2025-03-11 09:48:46 - Updating port to 9092
+2025-03-11 09:48:46 - Started ProductCatalogueServiceApplication in 8.651 seconds (process running for 10.358)
+2025-03-11 09:48:46 - DiscoveryClient_PRODUCT-CATALOGUE-SERVICE/APL-52NHQ04.wipro.com:Product-Catalogue-Service:9092 - registration status: 204
+2025-03-11 09:49:16 - Disable delta property : false
+2025-03-11 09:49:16 - Single vip registry refresh property : null
+2025-03-11 09:49:16 - Force full registry fetch : false
+2025-03-11 09:49:16 - Application is null : false
+2025-03-11 09:49:16 - Registered Applications size is zero : true
+2025-03-11 09:49:16 - Application version is -1: false
+2025-03-11 09:49:16 - Getting all instance registry info from the eureka server
+2025-03-11 09:49:16 - The response status is 200
+2025-03-11 09:51:15 - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-03-11 09:51:15 - Unregistering application PRODUCT-CATALOGUE-SERVICE with eureka with status DOWN
+2025-03-11 09:51:15 - Saw local status change event StatusChangeEvent [timestamp=1741666875732, current=DOWN, previous=UP]
+2025-03-11 09:51:15 - DiscoveryClient_PRODUCT-CATALOGUE-SERVICE/APL-52NHQ04.wipro.com:Product-Catalogue-Service:9092: registering service...
+2025-03-11 09:51:15 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-11 09:51:15 - Pausing ProtocolHandler ["http-nio-9092"]
+2025-03-11 09:51:15 - Graceful shutdown complete
+2025-03-11 09:51:15 - Stopping ProtocolHandler ["http-nio-9092"]
+2025-03-11 09:51:15 - DiscoveryClient_PRODUCT-CATALOGUE-SERVICE/APL-52NHQ04.wipro.com:Product-Catalogue-Service:9092 - registration status: 204
+2025-03-11 09:51:15 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-11 09:51:15 - HikariPool-1 - Shutdown initiated...
+2025-03-11 09:51:15 - HikariPool-1 - Shutdown completed.
+2025-03-11 09:51:15 - Shutting down DiscoveryClient ...
+2025-03-11 09:51:18 - Unregistering ...
+2025-03-11 09:51:18 - task supervisor shutting down, can't accept the task
+2025-03-11 09:51:18 - DiscoveryClient_PRODUCT-CATALOGUE-SERVICE/APL-52NHQ04.wipro.com:Product-Catalogue-Service:9092 - deregister  status: 200
+2025-03-11 09:51:18 - Completed shut down of DiscoveryClient
+2025-03-11 09:51:18 - Starting ProductCatalogueServiceApplication using Java 21.0.3 with PID 18084 (D:\Backend_Capstone\Product-Catalogue-Service\target\classes started by VI20555791 in D:\Backend_Capstone\Product-Catalogue-Service)
+2025-03-11 09:51:18 - No active profile set, falling back to 1 default profile: "default"
+2025-03-11 09:51:19 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-11 09:51:19 - Finished Spring Data repository scanning in 12 ms. Found 1 JPA repository interface.
+2025-03-11 09:51:19 - BeanFactory id=a8f6f847-6363-36e2-8448-0d0072e13ba2
+2025-03-11 09:51:19 - Tomcat initialized with port 9092 (http)
+2025-03-11 09:51:19 - Initializing ProtocolHandler ["http-nio-9092"]
+2025-03-11 09:51:19 - Starting service [Tomcat]
+2025-03-11 09:51:19 - Starting Servlet engine: [Apache Tomcat/10.1.33]
+2025-03-11 09:51:19 - Initializing Spring embedded WebApplicationContext
+2025-03-11 09:51:19 - Root WebApplicationContext: initialization completed in 641 ms
+2025-03-11 09:51:19 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-11 09:51:19 - HHH000026: Second-level cache disabled
+2025-03-11 09:51:19 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-11 09:51:19 - HikariPool-2 - Starting...
+2025-03-11 09:51:19 - HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3a19d561
+2025-03-11 09:51:19 - HikariPool-2 - Start completed.
+2025-03-11 09:51:19 - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-11 09:51:19 - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-03-11 09:51:19 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-11 09:51:19 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-11 09:51:19 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-11 09:51:19 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-11 09:51:20 - LiveReload server is running on port 35729
+2025-03-11 09:51:20 - Eureka HTTP Client uses RestClient.
+2025-03-11 09:51:20 - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-03-11 09:51:20 - Setting initial instance status as: STARTING
+2025-03-11 09:51:20 - Initializing Eureka in region us-east-1
+2025-03-11 09:51:20 - Resolving eureka endpoints via configuration
+2025-03-11 09:51:20 - Disable delta property : false
+2025-03-11 09:51:20 - Single vip registry refresh property : null
+2025-03-11 09:51:20 - Force full registry fetch : false
+2025-03-11 09:51:20 - Application is null : false
+2025-03-11 09:51:20 - Registered Applications size is zero : true
+2025-03-11 09:51:20 - Application version is -1: true
+2025-03-11 09:51:20 - Getting all instance registry info from the eureka server
+2025-03-11 09:51:20 - The response status is 200
+2025-03-11 09:51:20 - Starting heartbeat executor: renew interval is: 30
+2025-03-11 09:51:20 - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-03-11 09:51:20 - Discovery Client initialized at timestamp 1741666880293 with initial instances count: 1
+2025-03-11 09:51:20 - Registering application PRODUCT-CATALOGUE-SERVICE with eureka with status UP
+2025-03-11 09:51:20 - Saw local status change event StatusChangeEvent [timestamp=1741666880297, current=UP, previous=STARTING]
+2025-03-11 09:51:20 - DiscoveryClient_PRODUCT-CATALOGUE-SERVICE/APL-52NHQ04.wipro.com:Product-Catalogue-Service:9092: registering service...
+2025-03-11 09:51:20 - Starting ProtocolHandler ["http-nio-9092"]
+2025-03-11 09:51:20 - Tomcat started on port 9092 (http) with context path '/'
+2025-03-11 09:51:20 - Updating port to 9092
+2025-03-11 09:51:20 - Started ProductCatalogueServiceApplication in 1.414 seconds (process running for 164.533)
+2025-03-11 09:51:20 - DiscoveryClient_PRODUCT-CATALOGUE-SERVICE/APL-52NHQ04.wipro.com:Product-Catalogue-Service:9092 - registration status: 204
+2025-03-11 09:51:20 - Condition evaluation unchanged
+2025-03-11 09:52:00 - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-03-11 09:52:00 - Unregistering application PRODUCT-CATALOGUE-SERVICE with eureka with status DOWN
+2025-03-11 09:52:00 - Saw local status change event StatusChangeEvent [timestamp=1741666920530, current=DOWN, previous=UP]
+2025-03-11 09:52:00 - DiscoveryClient_PRODUCT-CATALOGUE-SERVICE/APL-52NHQ04.wipro.com:Product-Catalogue-Service:9092: registering service...
+2025-03-11 09:52:00 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-11 09:52:00 - Pausing ProtocolHandler ["http-nio-9092"]
+2025-03-11 09:52:00 - Graceful shutdown complete
+2025-03-11 09:52:00 - Stopping ProtocolHandler ["http-nio-9092"]
+2025-03-11 09:52:00 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-11 09:52:00 - HikariPool-2 - Shutdown initiated...
+2025-03-11 09:52:00 - DiscoveryClient_PRODUCT-CATALOGUE-SERVICE/APL-52NHQ04.wipro.com:Product-Catalogue-Service:9092 - registration status: 204
+2025-03-11 09:52:00 - HikariPool-2 - Shutdown completed.
+2025-03-11 09:52:00 - Shutting down DiscoveryClient ...
+2025-03-11 09:52:03 - Unregistering ...
+2025-03-11 09:52:03 - DiscoveryClient_PRODUCT-CATALOGUE-SERVICE/APL-52NHQ04.wipro.com:Product-Catalogue-Service:9092 - deregister  status: 200
+2025-03-11 09:52:03 - Completed shut down of DiscoveryClient
+2025-03-11 09:52:03 - Starting ProductCatalogueServiceApplication using Java 21.0.3 with PID 18084 (D:\Backend_Capstone\Product-Catalogue-Service\target\classes started by VI20555791 in D:\Backend_Capstone\Product-Catalogue-Service)
+2025-03-11 09:52:03 - No active profile set, falling back to 1 default profile: "default"
+2025-03-11 09:52:03 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-11 09:52:03 - Finished Spring Data repository scanning in 9 ms. Found 1 JPA repository interface.
+2025-03-11 09:52:04 - BeanFactory id=a8f6f847-6363-36e2-8448-0d0072e13ba2
+2025-03-11 09:52:04 - Tomcat initialized with port 9092 (http)
+2025-03-11 09:52:04 - Initializing ProtocolHandler ["http-nio-9092"]
+2025-03-11 09:52:04 - Starting service [Tomcat]
+2025-03-11 09:52:04 - Starting Servlet engine: [Apache Tomcat/10.1.33]
+2025-03-11 09:52:04 - Initializing Spring embedded WebApplicationContext
+2025-03-11 09:52:04 - Root WebApplicationContext: initialization completed in 453 ms
+2025-03-11 09:52:04 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-11 09:52:04 - HHH000026: Second-level cache disabled
+2025-03-11 09:52:04 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-11 09:52:04 - HikariPool-3 - Starting...
+2025-03-11 09:52:04 - HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@19af9fa5
+2025-03-11 09:52:04 - HikariPool-3 - Start completed.
+2025-03-11 09:52:04 - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-11 09:52:04 - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-03-11 09:52:04 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-3)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-11 09:52:04 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-11 09:52:04 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-11 09:52:04 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-11 09:52:04 - LiveReload server is running on port 35729
+2025-03-11 09:52:04 - Eureka HTTP Client uses RestClient.
+2025-03-11 09:52:04 - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-03-11 09:52:04 - Setting initial instance status as: STARTING
+2025-03-11 09:52:04 - Initializing Eureka in region us-east-1
+2025-03-11 09:52:04 - Resolving eureka endpoints via configuration
+2025-03-11 09:52:04 - Disable delta property : false
+2025-03-11 09:52:04 - Single vip registry refresh property : null
+2025-03-11 09:52:04 - Force full registry fetch : false
+2025-03-11 09:52:04 - Application is null : false
+2025-03-11 09:52:04 - Registered Applications size is zero : true
+2025-03-11 09:52:04 - Application version is -1: true
+2025-03-11 09:52:04 - Getting all instance registry info from the eureka server
+2025-03-11 09:52:04 - The response status is 200
+2025-03-11 09:52:04 - Starting heartbeat executor: renew interval is: 30
+2025-03-11 09:52:04 - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-03-11 09:52:04 - Discovery Client initialized at timestamp 1741666924830 with initial instances count: 1
+2025-03-11 09:52:04 - Registering application PRODUCT-CATALOGUE-SERVICE with eureka with status UP
+2025-03-11 09:52:04 - Saw local status change event StatusChangeEvent [timestamp=1741666924836, current=UP, previous=STARTING]
+2025-03-11 09:52:04 - DiscoveryClient_PRODUCT-CATALOGUE-SERVICE/APL-52NHQ04.wipro.com:Product-Catalogue-Service:9092: registering service...
+2025-03-11 09:52:04 - Starting ProtocolHandler ["http-nio-9092"]
+2025-03-11 09:52:04 - Tomcat started on port 9092 (http) with context path '/'
+2025-03-11 09:52:04 - Updating port to 9092
+2025-03-11 09:52:04 - Started ProductCatalogueServiceApplication in 1.183 seconds (process running for 209.074)
+2025-03-11 09:52:04 - DiscoveryClient_PRODUCT-CATALOGUE-SERVICE/APL-52NHQ04.wipro.com:Product-Catalogue-Service:9092 - registration status: 204
+2025-03-11 09:52:04 - Condition evaluation unchanged
+2025-03-11 09:54:32 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-11 09:54:32 - Initializing Servlet 'dispatcherServlet'
+2025-03-11 09:54:32 - Completed initialization in 2 ms
+2025-03-11 09:54:32 - Searching for product with id: 2
+2025-03-11 09:54:32 - Searching for product with id: 2
+2025-03-11 09:54:32 - Product found: Product(productId=2, productName=Trimmer, productDescription=Long last battery, productPrice=499.0)
+2025-03-11 09:54:32 - Product found: Product(productId=2, productName=Trimmer, productDescription=Long last battery, productPrice=499.0)
+2025-03-11 09:54:37 - Searching for all products
+2025-03-11 09:54:37 - Searching for all products
+2025-03-11 09:54:37 - All products found: [Product(productId=1, productName=ASUS Rog 7, productDescription=Gaming mobile, productPrice=45000.0), Product(productId=2, productName=Trimmer, productDescription=Long last battery, productPrice=499.0), Product(productId=3, productName=Watch, productDescription=Smart Watch, productPrice=1099.0), Product(productId=4, productName=Laptop, productDescription=Gaming, productPrice=50000.0), Product(productId=5, productName=Headphone, productDescription=8D, productPrice=1200.0), Product(productId=6, productName=Charger, productDescription=Fast Charging, productPrice=299.0), Product(productId=7, productName=Dumbbells, productDescription=5kg +5kg, productPrice=600.0), Product(productId=8, productName=Mouse, productDescription=Bluetooth Facility, productPrice=199.0), Product(productId=9, productName=Perfume, productDescription=Premium smell, productPrice=499.0), Product(productId=10, productName=Motorola 7, productDescription=Camera, productPrice=15000.0), Product(productId=11, productName=Pixel, productDescription=Good performance, productPrice=30000.22), Product(productId=12, productName=iPhone, productDescription=Good performance, productPrice=50000.0), Product(productId=13, productName=Nailcutter, productDescription=Solid steel, productPrice=59.0), Product(productId=21, productName=Bag, productDescription=Light Weight,Comfortable, productPrice=351.0)]
+2025-03-11 09:54:37 - All products found: [Product(productId=1, productName=ASUS Rog 7, productDescription=Gaming mobile, productPrice=45000.0), Product(productId=2, productName=Trimmer, productDescription=Long last battery, productPrice=499.0), Product(productId=3, productName=Watch, productDescription=Smart Watch, productPrice=1099.0), Product(productId=4, productName=Laptop, productDescription=Gaming, productPrice=50000.0), Product(productId=5, productName=Headphone, productDescription=8D, productPrice=1200.0), Product(productId=6, productName=Charger, productDescription=Fast Charging, productPrice=299.0), Product(productId=7, productName=Dumbbells, productDescription=5kg +5kg, productPrice=600.0), Product(productId=8, productName=Mouse, productDescription=Bluetooth Facility, productPrice=199.0), Product(productId=9, productName=Perfume, productDescription=Premium smell, productPrice=499.0), Product(productId=10, productName=Motorola 7, productDescription=Camera, productPrice=15000.0), Product(productId=11, productName=Pixel, productDescription=Good performance, productPrice=30000.22), Product(productId=12, productName=iPhone, productDescription=Good performance, productPrice=50000.0), Product(productId=13, productName=Nailcutter, productDescription=Solid steel, productPrice=59.0), Product(productId=21, productName=Bag, productDescription=Light Weight,Comfortable, productPrice=351.0)]
+2025-03-11 09:56:20 - Application shutdown requested.
+2025-03-11 09:56:20 - Unregistering application PRODUCT-CATALOGUE-SERVICE with eureka with status DOWN
+2025-03-11 09:56:20 - Saw local status change event StatusChangeEvent [timestamp=1741667180715, current=DOWN, previous=UP]
+2025-03-11 09:56:20 - DiscoveryClient_PRODUCT-CATALOGUE-SERVICE/APL-52NHQ04.wipro.com:Product-Catalogue-Service:9092: registering service...
+2025-03-11 09:56:20 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-11 09:56:20 - Pausing ProtocolHandler ["http-nio-9092"]
+2025-03-11 09:56:20 - Graceful shutdown complete
+2025-03-11 09:56:20 - Stopping ProtocolHandler ["http-nio-9092"]
+2025-03-11 09:56:20 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-11 09:56:20 - HikariPool-3 - Shutdown initiated...
+2025-03-11 09:56:20 - DiscoveryClient_PRODUCT-CATALOGUE-SERVICE/APL-52NHQ04.wipro.com:Product-Catalogue-Service:9092 - registration status: 204
+2025-03-11 09:56:20 - HikariPool-3 - Shutdown completed.
+2025-03-11 09:56:20 - Shutting down DiscoveryClient ...
+2025-03-11 09:56:23 - Unregistering ...
+2025-03-11 09:56:23 - DiscoveryClient_PRODUCT-CATALOGUE-SERVICE/APL-52NHQ04.wipro.com:Product-Catalogue-Service:9092 - deregister  status: 200
+2025-03-11 09:56:23 - Completed shut down of DiscoveryClient
