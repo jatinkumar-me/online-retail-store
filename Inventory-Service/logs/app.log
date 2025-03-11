@@ -1,0 +1,157 @@
+2025-03-11 11:00:48 - Starting InventoryServiceApplication using Java 21.0.3 with PID 23708 (D:\Backend_Capstone\Inventory-Service\target\classes started by VI20555791 in D:\Backend_Capstone\Inventory-Service)
+2025-03-11 11:00:48 - No active profile set, falling back to 1 default profile: "default"
+2025-03-11 11:00:48 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-11 11:00:48 - Finished Spring Data repository scanning in 11 ms. Found 1 JPA repository interface.
+2025-03-11 11:00:49 - BeanFactory id=cce104c3-ab33-3179-b272-a70ebbb61109
+2025-03-11 11:00:49 - Tomcat initialized with port 9093 (http)
+2025-03-11 11:00:49 - Starting service [Tomcat]
+2025-03-11 11:00:49 - Starting Servlet engine: [Apache Tomcat/10.1.33]
+2025-03-11 11:00:49 - Initializing Spring embedded WebApplicationContext
+2025-03-11 11:00:49 - Root WebApplicationContext: initialization completed in 346 ms
+2025-03-11 11:00:49 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-11 11:00:49 - HHH000026: Second-level cache disabled
+2025-03-11 11:00:49 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-11 11:00:49 - HikariPool-4 - Starting...
+2025-03-11 11:00:49 - HikariPool-4 - Added connection com.mysql.cj.jdbc.ConnectionImpl@32c47e68
+2025-03-11 11:00:49 - HikariPool-4 - Start completed.
+2025-03-11 11:00:49 - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-11 11:00:49 - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-03-11 11:00:49 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-4)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-11 11:00:49 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-11 11:00:49 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-11 11:00:49 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-11 11:00:49 - LiveReload server is running on port 35729
+2025-03-11 11:00:49 - Eureka HTTP Client uses RestClient.
+2025-03-11 11:00:49 - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-03-11 11:00:49 - Setting initial instance status as: STARTING
+2025-03-11 11:00:49 - Initializing Eureka in region us-east-1
+2025-03-11 11:00:49 - Resolving eureka endpoints via configuration
+2025-03-11 11:00:49 - Disable delta property : false
+2025-03-11 11:00:49 - Single vip registry refresh property : null
+2025-03-11 11:00:49 - Force full registry fetch : false
+2025-03-11 11:00:49 - Application is null : false
+2025-03-11 11:00:49 - Registered Applications size is zero : true
+2025-03-11 11:00:49 - Application version is -1: true
+2025-03-11 11:00:49 - Getting all instance registry info from the eureka server
+2025-03-11 11:00:49 - The response status is 200
+2025-03-11 11:00:49 - Starting heartbeat executor: renew interval is: 30
+2025-03-11 11:00:49 - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-03-11 11:00:49 - Discovery Client initialized at timestamp 1741671049640 with initial instances count: 1
+2025-03-11 11:00:49 - Registering application INVENTORY-SERVICE with eureka with status UP
+2025-03-11 11:00:49 - Saw local status change event StatusChangeEvent [timestamp=1741671049642, current=UP, previous=STARTING]
+2025-03-11 11:00:49 - DiscoveryClient_INVENTORY-SERVICE/APL-52NHQ04.wipro.com:Inventory-Service:9093: registering service...
+2025-03-11 11:00:49 - Tomcat started on port 9093 (http) with context path '/'
+2025-03-11 11:00:49 - Updating port to 9093
+2025-03-11 11:00:49 - DiscoveryClient_INVENTORY-SERVICE/APL-52NHQ04.wipro.com:Inventory-Service:9093 - registration status: 204
+2025-03-11 11:00:49 - Started InventoryServiceApplication in 0.945 seconds (process running for 405.78)
+2025-03-11 11:00:49 - Condition evaluation unchanged
+2025-03-11 11:02:14 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-11 11:02:14 - Initializing Servlet 'dispatcherServlet'
+2025-03-11 11:02:14 - Completed initialization in 4 ms
+2025-03-11 11:02:14 - Searching for inventory with ID: 4
+2025-03-11 11:02:14 - Searching for inventory with ID: 4
+2025-03-11 11:02:14 - Inventory found: Inventory(inventoryId=4, productId=5, quantity=53)
+2025-03-11 11:02:14 - Inventory found: Inventory(inventoryId=4, productId=5, quantity=53)
+2025-03-11 11:02:28 - Application shutdown requested.
+2025-03-11 11:02:28 - Unregistering application INVENTORY-SERVICE with eureka with status DOWN
+2025-03-11 11:02:28 - Saw local status change event StatusChangeEvent [timestamp=1741671148321, current=DOWN, previous=UP]
+2025-03-11 11:02:28 - DiscoveryClient_INVENTORY-SERVICE/APL-52NHQ04.wipro.com:Inventory-Service:9093: registering service...
+2025-03-11 11:02:28 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-11 11:02:28 - Graceful shutdown complete
+2025-03-11 11:02:28 - DiscoveryClient_INVENTORY-SERVICE/APL-52NHQ04.wipro.com:Inventory-Service:9093 - registration status: 204
+2025-03-11 11:02:28 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-11 11:02:28 - HikariPool-4 - Shutdown initiated...
+2025-03-11 11:02:28 - HikariPool-4 - Shutdown completed.
+2025-03-11 11:02:28 - Shutting down DiscoveryClient ...
+2025-03-11 11:02:31 - Unregistering ...
+2025-03-11 11:02:31 - DiscoveryClient_INVENTORY-SERVICE/APL-52NHQ04.wipro.com:Inventory-Service:9093 - deregister  status: 200
+2025-03-11 11:02:31 - Completed shut down of DiscoveryClient
+2025-03-11 11:02:44 - HV000001: Hibernate Validator 8.0.1.Final
+2025-03-11 11:02:44 - Starting InventoryServiceApplication using Java 21.0.3 with PID 17092 (D:\Backend_Capstone\Inventory-Service\target\classes started by VI20555791 in D:\Backend_Capstone\Inventory-Service)
+2025-03-11 11:02:44 - No active profile set, falling back to 1 default profile: "default"
+2025-03-11 11:02:44 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-03-11 11:02:44 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-03-11 11:02:44 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-11 11:02:45 - Finished Spring Data repository scanning in 140 ms. Found 1 JPA repository interface.
+2025-03-11 11:02:45 - BeanFactory id=cce104c3-ab33-3179-b272-a70ebbb61109
+2025-03-11 11:02:45 - Tomcat initialized with port 9093 (http)
+2025-03-11 11:02:45 - Initializing ProtocolHandler ["http-nio-9093"]
+2025-03-11 11:02:45 - Starting service [Tomcat]
+2025-03-11 11:02:45 - Starting Servlet engine: [Apache Tomcat/10.1.33]
+2025-03-11 11:02:45 - Initializing Spring embedded WebApplicationContext
+2025-03-11 11:02:45 - Root WebApplicationContext: initialization completed in 1813 ms
+2025-03-11 11:02:46 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-11 11:02:46 - HHH000412: Hibernate ORM core version 6.6.2.Final
+2025-03-11 11:02:46 - HHH000026: Second-level cache disabled
+2025-03-11 11:02:46 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-11 11:02:46 - HikariPool-1 - Starting...
+2025-03-11 11:02:46 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@31e22a2b
+2025-03-11 11:02:46 - HikariPool-1 - Start completed.
+2025-03-11 11:02:46 - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-11 11:02:46 - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-03-11 11:02:46 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-11 11:02:47 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-11 11:02:47 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-11 11:02:48 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-11 11:02:48 - LiveReload server is running on port 35729
+2025-03-11 11:02:48 - Eureka HTTP Client uses RestClient.
+2025-03-11 11:02:48 - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-03-11 11:02:48 - Setting initial instance status as: STARTING
+2025-03-11 11:02:48 - Initializing Eureka in region us-east-1
+2025-03-11 11:02:48 - Resolving eureka endpoints via configuration
+2025-03-11 11:02:48 - Disable delta property : false
+2025-03-11 11:02:48 - Single vip registry refresh property : null
+2025-03-11 11:02:48 - Force full registry fetch : false
+2025-03-11 11:02:48 - Application is null : false
+2025-03-11 11:02:48 - Registered Applications size is zero : true
+2025-03-11 11:02:48 - Application version is -1: true
+2025-03-11 11:02:48 - Getting all instance registry info from the eureka server
+2025-03-11 11:02:49 - The response status is 200
+2025-03-11 11:02:49 - Starting heartbeat executor: renew interval is: 30
+2025-03-11 11:02:49 - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-03-11 11:02:49 - Discovery Client initialized at timestamp 1741671169284 with initial instances count: 2
+2025-03-11 11:02:49 - Registering application INVENTORY-SERVICE with eureka with status UP
+2025-03-11 11:02:49 - Saw local status change event StatusChangeEvent [timestamp=1741671169289, current=UP, previous=STARTING]
+2025-03-11 11:02:49 - DiscoveryClient_INVENTORY-SERVICE/APL-52NHQ04.wipro.com:Inventory-Service:9093: registering service...
+2025-03-11 11:02:49 - Starting ProtocolHandler ["http-nio-9093"]
+2025-03-11 11:02:49 - Tomcat started on port 9093 (http) with context path '/'
+2025-03-11 11:02:49 - Updating port to 9093
+2025-03-11 11:02:49 - DiscoveryClient_INVENTORY-SERVICE/APL-52NHQ04.wipro.com:Inventory-Service:9093 - registration status: 204
+2025-03-11 11:02:49 - Started InventoryServiceApplication in 5.654 seconds (process running for 7.026)
+2025-03-11 11:03:32 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-11 11:03:32 - Initializing Servlet 'dispatcherServlet'
+2025-03-11 11:03:32 - Completed initialization in 2 ms
+2025-03-11 11:03:32 - Searching for inventory with ID: 4
+2025-03-11 11:03:32 - Searching for inventory with ID: 4
+2025-03-11 11:03:32 - Inventory found: Inventory(inventoryId=4, productId=5, quantity=53)
+2025-03-11 11:03:32 - Inventory found: Inventory(inventoryId=4, productId=5, quantity=53)
+2025-03-11 11:06:24 - Application shutdown requested.
+2025-03-11 11:06:24 - Unregistering application INVENTORY-SERVICE with eureka with status DOWN
+2025-03-11 11:06:24 - Saw local status change event StatusChangeEvent [timestamp=1741671384417, current=DOWN, previous=UP]
+2025-03-11 11:06:24 - DiscoveryClient_INVENTORY-SERVICE/APL-52NHQ04.wipro.com:Inventory-Service:9093: registering service...
+2025-03-11 11:06:24 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-11 11:06:24 - Pausing ProtocolHandler ["http-nio-9093"]
+2025-03-11 11:06:24 - DiscoveryClient_INVENTORY-SERVICE/APL-52NHQ04.wipro.com:Inventory-Service:9093 - registration status: 204
+2025-03-11 11:06:24 - Graceful shutdown complete
+2025-03-11 11:06:24 - Stopping ProtocolHandler ["http-nio-9093"]
+2025-03-11 11:06:24 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-11 11:06:24 - HikariPool-1 - Shutdown initiated...
+2025-03-11 11:06:24 - HikariPool-1 - Shutdown completed.
+2025-03-11 11:06:24 - Shutting down DiscoveryClient ...
+2025-03-11 11:06:27 - Unregistering ...
+2025-03-11 11:06:27 - DiscoveryClient_INVENTORY-SERVICE/APL-52NHQ04.wipro.com:Inventory-Service:9093 - deregister  status: 200
+2025-03-11 11:06:27 - Completed shut down of DiscoveryClient
