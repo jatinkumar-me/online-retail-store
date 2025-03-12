@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 
 import com.jatin.customer.dto.CustomerDto;
 import com.jatin.customer.entity.Customer;
+import com.jatin.customer.exception.ResourceNotFoundException;
 import com.jatin.customer.repository.CustomerRepository;
 
 @Service

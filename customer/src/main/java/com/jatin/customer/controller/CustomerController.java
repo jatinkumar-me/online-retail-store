@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.jatin.customer.dto.CustomerDto;
@@ -29,7 +30,7 @@ public class CustomerController {
 	}
 
 	@GetMapping("/searchCustomer")
-	public ResponseEntity<Customer> getCustomer(@PathVariable Long customerId) {
+	public ResponseEntity<Customer> getCustomer(@RequestParam Long customerId) {
 		Customer customer = customerService.getCustomerById(customerId);
 		return ResponseEntity.ok(customer);
 	}
