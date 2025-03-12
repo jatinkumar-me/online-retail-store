@@ -6,8 +6,6 @@
 @port = 8082
 @url = http://{{host}}:{{port}}
 @token=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJqYXRpbjIzQGdqLmNvbSIsImlhdCI6MTczMjI2NTI5Nn0.z0aIExksEARehCQH9bEPAbByLCzJn9o95PZn7f_aZ4c
-###
-GET {{url}}
 
 ########################################################
 ########### ADD NEW CUSTOMER ENDPOINT ##################
