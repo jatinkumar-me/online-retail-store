@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 
 import com.jatin.customer.dto.CustomerDto;
 import com.jatin.customer.entity.Customer;
+import com.jatin.customer.exception.ResourceNotFoundException;
 import com.jatin.customer.repository.CustomerRepository;
 
 @Service
@@ -20,7 +21,8 @@ public class CustomerService {
 	}
 
 	public Customer getCustomerById(Long customerId) {
-		return customerRepository.findById(customerId).orElse(null);
+		return customerRepository.findById(customerId)
+				.orElseThrow(() -> new ResourceNotFoundException("Customer not found"));
 	}
 
 	public Customer saveCustomer(CustomerDto customer) {
@@ -29,8 +31,25 @@ public class CustomerService {
 				.customerShippingAddress(customer.getCustomerShippingAddress()).build());
 	}
 
-	public Customer updateCustomer(Customer customer) {
-		return customerRepository.save(customer);
+	public Customer updateCustomer(Customer updatedCustomer) {
+		return customerRepository.findById(updatedCustomer.getId())
+				.map(existingCustomer -> {
+					if (updatedCustomer.getCustomerName() != null) {
+						existingCustomer.setCustomerName(updatedCustomer.getCustomerName());
+					}
+					if (updatedCustomer.getCustomerEmail() != null) {
+						existingCustomer.setCustomerEmail(updatedCustomer.getCustomerEmail());
+					}
+					if (updatedCustomer.getCustomerBillingAddress() != null) {
+						existingCustomer.setCustomerBillingAddress(updatedCustomer.getCustomerBillingAddress());
+					}
+					if (updatedCustomer.getCustomerShippingAddress() != null) {
+						existingCustomer.setCustomerShippingAddress(updatedCustomer.getCustomerShippingAddress());
+					}
+					return customerRepository.save(existingCustomer);
+				})
+				.orElseThrow(
+						() -> new ResourceNotFoundException("Customer not found with ID: " + updatedCustomer.getId()));
 	}
 
 	public void deleteCustomer(Long customerId) {
