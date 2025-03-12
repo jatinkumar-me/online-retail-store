@@ -51,19 +51,5 @@ PUT {{url}}/api/updateCustomer
 {
     "id": 1,
     "customerName": "JatiN Kumar",
-    "customerEmail": "jatin@123",
-    "customerBillingAddress": {
-	"doorNo": "213",
-	"streetName": "Koramangala",
-	"layout": "HSR Layout",
-	"city": "Bangalore",
-	"pincode": "560102"
-    },
-    "customerShippingAddress": {
-	"doorNo": "213",
-	"streetName": "Koramangala",
-	"layout": "HSR Layout",
-	"city": "Bangalore",
-	"pincode": "560102"
-    }
+    "customerEmail": "jatin@123"
 }
