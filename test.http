@@ -3,89 +3,69 @@
 ########################################################
 
 @host = localhost
-@port = 8080
+@port = 8082
 @url = http://{{host}}:{{port}}
 @token=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJqYXRpbjIzQGdqLmNvbSIsImlhdCI6MTczMjI2NTI5Nn0.z0aIExksEARehCQH9bEPAbByLCzJn9o95PZn7f_aZ4c
 ###
 GET {{url}}
 
-### Register new user
-POST {{url}}/auth/register
+########################################################
+########### ADD NEW CUSTOMER ENDPOINT ##################
+########################################################
+POST {{url}}/api/addCustomer
 
 {
-    "name": "Beghairat Insan",
-    "email": "beghairat@gj.com",
-    "password": "fejo",
-    "address": "Honululu",
-    "phoneNumber": "3432323232"
+    "customerName": "Jatin Kumar",
+    "customerEmail": "jatin@123",
+    "customerBillingAddress": {
+	"doorNo": "213",
+	"streetName": "Koramangala",
+	"layout": "HSR Layout",
+	"city": "Bangalore",
+	"pincode": "560102"
+    },
+    "customerShippingAddress": {
+	"doorNo": "213",
+	"streetName": "Koramangala",
+	"layout": "HSR Layout",
+	"city": "Bangalore",
+	"pincode": "560102"
+    }
 }
 
 ########################################################
-########### LOGIN ENDPOINT IT WILL ASSIGN JWT ##########
+########### SEARCH CUSTOMER ENDPOINT ###################
 ########################################################
-POST {{url}}/auth/login
+GET {{url}}/api/searchCustomer?customerId=1
 
-{
-    "email": "beghairat@gj.com",
-    "password": "fejo"
-}
-
-# @lang lua 
-> {%
-local body = vim.json.decode(response.body)
-
-client.global.set("token", body.token)
-%}
-
-
-### get all users
-GET {{url}}/users/all
-
-### Login user
-POST {{url}}/login
-
-### ACCOUNT ENDPOINTS
-@url = http://{{host}}:{{port}}/api/accounts
-
-### Create an account
-POST {{url}}/create
-Authorization: Bearer {{token}}
-
-{
-    "userId": 3,
-    "accountType": "SAVINGS"
-}
-
-### GET Account details
-GET {{url}}/1
-Authorization: Bearer {{token}}
-
-### GET User account details
-GET {{url}}/user/3
-Authorization: Bearer {{token}}
-
-### update balance
-PUT {{url}}/2/update-balance?newBalance=21321
-Authorization: Bearer {{token}}
-
-### Transaction endpoints
-@url = http://{{host}}:{{port}}/api/transactions
-
-### Perform transactions
-POST {{url}}/transfer
-Authorization: Bearer {{token}}
-
-{
-	"fromAccountId": 2,
-	"toAccountId": 1,
-	"amount": 23,
-	"description": "Take this money! I don't need it anyway"
-}
 
 ########################################################
-########### PRODUCT ENDPOINT ###########################
+########### DELETE CUSTOMER ENDPOINT ###################
 ########################################################
-@url = http://{{host}}:{{port}}/api/products
+DELETE {{url}}/api/deleteCustomer/1
 
-### Get all products
-GET {{url}}
+
+########################################################
+########### UPDATE CUSTOMER ENDPOINT ###################
+########################################################
+PUT {{url}}/api/updateCustomer
+
+{
+    "id": 1,
+    "customerName": "JatiN Kumar",
+    "customerEmail": "jatin@123",
+    "customerBillingAddress": {
+	"doorNo": "213",
+	"streetName": "Koramangala",
+	"layout": "HSR Layout",
+	"city": "Bangalore",
+	"pincode": "560102"
+    },
+    "customerShippingAddress": {
+	"doorNo": "213",
+	"streetName": "Koramangala",
+	"layout": "HSR Layout",
+	"city": "Bangalore",
+	"pincode": "560102"
+    }
+}
