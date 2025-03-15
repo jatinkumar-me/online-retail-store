@@ -34,6 +34,9 @@ public class ShoppingService {
 	private CustomerOrderRepository customerOrderRepository;
 
 	@Autowired
+	private CustomerClient customerClient;
+
+	@Autowired
 	private CartClient cartClient;
 
 	@Autowired
@@ -42,8 +45,6 @@ public class ShoppingService {
 	@Autowired
 	private ProductClient productClient;
 
-	@Autowired
-	private CustomerClient customerClient;
 
 	@Autowired
 	private InventoryClient inventoryClient;

@@ -15,5 +15,5 @@ public interface CustomerClient {
 	public Customer getCustomer(@PathVariable("customerId") Long userId);
 
 	@PostMapping("/api/addCustomer")
-	public Customer addCustomer(@RequestBody Customer  customer);
+	public Customer addCustomer(@RequestBody Customer customer);
 }

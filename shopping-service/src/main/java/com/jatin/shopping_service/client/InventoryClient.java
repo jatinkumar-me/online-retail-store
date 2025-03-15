@@ -12,12 +12,12 @@ import com.jatin.shopping_service.entity.Inventory;
 @FeignClient(name = "inventory-service")
 public interface InventoryClient {
 
-    @PostMapping("/api/inventory")
-    public Inventory addInventory(@RequestBody Inventory inventory);
+	@PostMapping("/api/inventory")
+	public Inventory addInventory(@RequestBody Inventory inventory);
 
-    @GetMapping("/api/inventory/{productId}")
-    public Inventory getInventoryByProductId(@PathVariable Long productId);
+	@GetMapping("/api/inventory/{productId}")
+	public Inventory getInventoryByProductId(@PathVariable Long productId);
 
-    @PutMapping("/api/inventory/{id}")
-    void updateInventory(@PathVariable Long id, @RequestBody Inventory inventory);
+	@PutMapping("/api/inventory/{id}")
+	void updateInventory(@PathVariable Long id, @RequestBody Inventory inventory);
 }

@@ -17,11 +17,11 @@ public interface CartClient {
 	public Cart getCart(@PathVariable Long id);
 
 	@PostMapping("/api/cart")
-    public Cart addCart(@RequestBody Cart cart);
+	public Cart addCart(@RequestBody Cart cart);
 
 	@PutMapping("/api/cart/{id}")
-    public Cart updateCart(@PathVariable Long id, @RequestBody Cart cart);
+	public Cart updateCart(@PathVariable Long id, @RequestBody Cart cart);
 
 	@DeleteMapping("/api/cart/{id}")
-    public void emptyCart(@PathVariable Long id);
+	public void emptyCart(@PathVariable Long id);
 }
