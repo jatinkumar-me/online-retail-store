@@ -16,6 +16,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.jatin.shopping_service.dto.InventoryDto;
 import com.jatin.shopping_service.entity.Cart;
+import com.jatin.shopping_service.entity.Customer;
+import com.jatin.shopping_service.entity.CustomerCart;
 import com.jatin.shopping_service.entity.Order;
 import com.jatin.shopping_service.service.ShoppingService;
 
@@ -29,6 +31,11 @@ public class ShoppingController {
 	@GetMapping("/customer/{customerId}/cart")
 	public ResponseEntity<Cart> getCart(@PathVariable("customerId") Long customerId) {
 		return ResponseEntity.ok(shoppingService.getCart(customerId));
+	}
+
+	@PostMapping("/customer")
+	public ResponseEntity<CustomerCart> addCustomer(@RequestBody Customer customer) {
+		return ResponseEntity.ok(shoppingService.addCustomer(customer));
 	}
 
 	@GetMapping("/customer/{customerId}")
