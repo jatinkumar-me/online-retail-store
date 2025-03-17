@@ -60,4 +60,40 @@ PUT {{url}}/api/updateCustomer
 @port=8087
 @url=http://{{host}}:{{port}}/api/shopping-service
 
-GET {{url}}/customer/1
+@customerId=1
+
+### GET CUSTOMER DETAILS    
+GET {{url}}/customer/{{customerId}}
+
+### GET CUSTOMER CART
+GET {{url}}/customer/{{customerId}}/cart
+
+### UPDATE CUSTOMER CART 
+PUT {{url}}/customer/{{customerId}}/cart
+
+{
+	"cartId": 1,
+	"lineItems": {
+	    "itemId": 1,
+	    "productId": 1,
+	    "productName": "Laptop",
+	    "quantity": 1,
+	    "price": 50000
+	}
+}
+
+### ADD PRODUCT TO INVENTORY
+POST {{url}}/products
+
+{
+    "productName": "Laptop",
+    "productDescription": "Dell Inspiron 15",
+    "quantity": 10,
+    "price": 50000	
+}
+
+### GET ALL ORDERS
+GET {{url}}/customer/{{customerId}}/orders
+
+### PLACE ORDER
+POST {{url}}/customer/{{customerId}}/orders
