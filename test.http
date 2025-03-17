@@ -53,3 +53,11 @@ PUT {{url}}/api/updateCustomer
     "customerName": "JatiN Kumar",
     "customerEmail": "jatin@123"
 }
+
+########################################################
+########### SHOPPING SERVICE ENDPOINTS #################
+########################################################
+@port=8087
+@url=http://{{host}}:{{port}}/api/shopping-service
+
+GET {{url}}/customer/1
