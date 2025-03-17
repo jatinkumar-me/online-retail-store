@@ -55,7 +55,7 @@ public class ShoppingController {
 		return ResponseEntity.ok(shoppingService.addItemsToCart(customerId, cart));
 	}
 
-	@PostMapping("/customer/{customerId}/order")
+	@PostMapping("/customer/{customerId}/orders")
 	public ResponseEntity<Order> placeOrder(@PathVariable("customerId") Long customerId) {
 		return ResponseEntity.ok(shoppingService.createOrder(customerId));
 	}
