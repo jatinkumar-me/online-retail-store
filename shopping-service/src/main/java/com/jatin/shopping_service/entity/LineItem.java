@@ -10,5 +10,4 @@ public class LineItem {
 	private String productName;
 	private Integer quantity;
 	private Double price;
-	private Order order;
 }
