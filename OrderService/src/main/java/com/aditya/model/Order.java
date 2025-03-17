@@ -1,9 +1,16 @@
-package com.wipro.entity;
-
-import jakarta.persistence.*;
+package com.aditya.model;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import jakarta.persistence.CascadeType;
+import jakarta.persistence.Entity;
+import jakarta.persistence.FetchType;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.OneToMany;
+import jakarta.persistence.Table;
 
 @Entity
 @Table(name="orders")
@@ -16,8 +23,6 @@ public class Order {
 
     @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY,mappedBy = "order")
     private List<LineItem> lineItems=new ArrayList<>();
-    
-    
 
 	public Order() {
 		super();
@@ -53,9 +58,5 @@ public class Order {
 	public void setLineItems(List<LineItem> lineItems) {
 		this.lineItems = lineItems;
 	}
-    
-    
-	
-    
     
 }

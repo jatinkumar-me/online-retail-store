@@ -1,4 +1,4 @@
-package com.wipro.service;
+package com.aditya.service;
 
 import java.util.List;
 import java.util.Optional;
@@ -6,10 +6,10 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.wipro.entity.LineItem;
-import com.wipro.entity.Order;
-import com.wipro.repository.LineItemRepository;
-import com.wipro.repository.OrderRepository;
+import com.aditya.model.LineItem;
+import com.aditya.model.Order;
+import com.aditya.repository.LineItemRepository;
+import com.aditya.repository.OrderRepository;
 
 @Service
 public class OrderService {
