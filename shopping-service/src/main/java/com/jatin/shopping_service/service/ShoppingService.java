@@ -68,7 +68,7 @@ public class ShoppingService {
 		Product product = Product.builder()
 			.productName(inventoryDto.getProductName())
 			.productDescription(inventoryDto.getProductDescription())
-			.productPrice(inventoryDto.getPrice())
+			.productPrice(inventoryDto.getProductPrice())
 			.build();
 
 		Product createdProduct = productClient.createProduct(product);
