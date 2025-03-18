@@ -12,5 +12,5 @@ public class InventoryDto {
 	private String productName;
 	private String productDescription;
 	private Integer quantity;
-	private Integer price;
+	private Integer productPrice;
 }
