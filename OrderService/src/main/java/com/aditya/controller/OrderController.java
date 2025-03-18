@@ -19,7 +19,7 @@ import com.aditya.model.Order;
 import com.aditya.service.OrderService;
 
 @RestController
-@RequestMapping("/Api/order")
+@RequestMapping("/api/order")
 public class OrderController {
 
     @Autowired
@@ -34,9 +34,9 @@ public class OrderController {
     }
 
     @DeleteMapping("/{id}")
-    public ResponseEntity<Void> deleteOrder(@PathVariable Long id) {
+    public ResponseEntity<String> deleteOrder(@PathVariable Long id) {
         orderService.deleteOrder(id);
-        return new ResponseEntity<>(HttpStatus.OK);
+        return new ResponseEntity<>("Deleted Successfully",HttpStatus.OK);
     }
 
     @PutMapping("/{id}")
@@ -69,9 +69,9 @@ public class OrderController {
     }
 
     @DeleteMapping("/lineitem/{id}")
-    public ResponseEntity<Void> deleteLineItem(@PathVariable Long id) {
+    public ResponseEntity<String> deleteLineItem(@PathVariable Long id) {
         orderService.deleteLineItem(id);
-        return new ResponseEntity<>(HttpStatus.OK);
+        return new ResponseEntity<>("Line Items deleted",HttpStatus.OK);
     }
 
     @PutMapping("/lineitem/{id}")
