@@ -22,3 +22,17 @@ spring:
               - "*"
             allowCredentials: true
       discovery.locator.enabled: true
+      routes:
+        - id: product-service
+          uri: lb://PRODUCT-SERVICE
+          predicates:
+            - Path=/products/**
+        - id: customer-service
+          uri: lb://CUSTOMER-SERVICE
+          predicates: Path=/customers/**
+        - id: order-service
+          uri: lb://ORDERS-SERVICE
+          predicates: Path=/orders/**
+        - id: inventory-service
+          uri: lb://INVENTORY-SERVICE
+          predicates: Path=/inventory/**
