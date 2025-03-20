@@ -8,12 +8,12 @@ import org.springframework.web.bind.annotation.RequestBody;
 
 import com.jatin.shopping_service.entity.Order;
 
-@FeignClient(name = "order-service")
+@FeignClient(name = "OrderService")
 public interface OrderClient {
 
-	@PostMapping("/api/orders")
+	@PostMapping("/api/order")
 	Order createOrder(@RequestBody Order order);
 
-	@GetMapping("/api/orders/{orderId}")
+	@GetMapping("/api/order/{orderId}")
 	Order getOrder(@PathVariable Long orderId);
 }

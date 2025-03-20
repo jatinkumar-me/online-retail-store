@@ -31,7 +31,7 @@ public class ProductController {
     @Autowired
     private ProductService productService;
 
-    @PostMapping("/")
+    @PostMapping
     public ResponseEntity<?> addProduct(@Valid @RequestBody Product product) {
         logger.info("Adding new product: {}", product);
         Product savedProduct = productService.addProduct(product);

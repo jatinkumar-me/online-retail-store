@@ -1,15 +1,14 @@
 package com.aditya.service;
 
-import java.util.List;
-import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.aditya.model.LineItem;
 import com.aditya.model.Order;
-import com.aditya.repository.LineItemRepository;
 import com.aditya.repository.OrderRepository;
+
+import java.util.Optional;
 
 @Service
 public class OrderService {
@@ -17,59 +16,48 @@ public class OrderService {
     @Autowired
     private OrderRepository orderRepository;
 
-    @Autowired
-    private LineItemRepository lineItemRepository;
+//    public void placeOrder(Order order) {
+//        // Save order logic
+//        String orderDetails = "Order placed: " + order.getOrderId() + ", Products: " + order.getLineItems();
+//        kafkaProducer.sendOrderDetails(orderDetails);
+//    }
 
     public Order addOrder(Order order) {
-    	System.out.println(order);
-        for (LineItem item : order.getLineItems()) {
-            item.setOrder(order);
-        }
         return orderRepository.save(order);
     }
-    public void deleteOrder(Long orderId) {
-        orderRepository.deleteById(orderId);
+
+    public Optional<Order> getOrder(Long orderId) {
+        return orderRepository.findById(orderId);
     }
+
+//    @Autowired
+//    private KafkaProducer kafkaProducer;
 
     public Order updateOrder(Long orderId, Order updatedOrder) {
-        Optional<Order> existingOrder = orderRepository.findById(orderId);
-        if (existingOrder.isPresent()) {
-            Order order = existingOrder.get();
-            order.setLineItems(updatedOrder.getLineItems());
-            return orderRepository.save(order);
-        }
-        throw new RuntimeException("Order not found");
-    }
-
-    public Order searchOrder(Long orderId) {
         return orderRepository.findById(orderId)
+                .map(order -> {
+                    // Clear existing line items
+                    order.getLineItems().clear();
+
+                    // Add updated line items
+                    for (LineItem item : updatedOrder.getLineItems()) {
+                        order.getLineItems().add(item);
+                    }
+
+                    return orderRepository.save(order);
+                })
                 .orElseThrow(() -> new RuntimeException("Order not found"));
     }
-    
-//    public List<Long> getOrderIdsByCustomerId(Long customerId) {
-//        return orderRepository.findOrderIdsByCustomerId(customerId);
+
+//    public Order updateOrder(Long orderId, Order updatedOrder) {
+//        return orderRepository.findById(orderId)
+//                .map(order -> {
+//                    order.setLineItems(updatedOrder.getLineItems());
+//                    return orderRepository.save(order);
+//                }).orElseThrow(() -> new RuntimeException("Order not found"));
 //    }
-    public List<Order> getOrdersByCustomerId(Long customerId) {
-        return orderRepository.findByCustomerId(customerId);
-    }
 
-    public LineItem addLineItem(LineItem lineItem) {
-        return lineItemRepository.save(lineItem);
-    }
-
-    public void deleteLineItem(Long itemId) {
-        lineItemRepository.deleteById(itemId);
-    }
-
-    public LineItem updateLineItem(Long itemId, LineItem newLineItem) {
-        Optional<LineItem> optionalLineItem = lineItemRepository.findById(itemId);
-        if (optionalLineItem.isPresent()) {
-            LineItem lineItem = optionalLineItem.get();
-            lineItem.setProductName(newLineItem.getProductName());
-            lineItem.setQuantity(newLineItem.getQuantity());
-            lineItem.setPrice(newLineItem.getPrice());
-            return lineItemRepository.save(lineItem);
-        }
-        throw new RuntimeException("Line Item not found");
+    public void deleteOrder(Long orderId) {
+        orderRepository.deleteById(orderId);
     }
 }

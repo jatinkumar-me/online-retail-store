@@ -14,6 +14,5 @@ import lombok.NoArgsConstructor;
 public class Order {
 
 	private Long orderId;
-	private Long customerId;
 	private List<LineItem> lineItems;
 }

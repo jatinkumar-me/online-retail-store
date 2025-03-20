@@ -23,7 +23,7 @@ public class InventoryController {
     @Autowired
     private InventoryService inventoryService;
 
-    @PostMapping("/")
+    @PostMapping
     public ResponseEntity<?> addInventory(@Valid @RequestBody Inventory inventory) {
         logger.info("Adding new inventory: {}", inventory);
         Inventory savedInventory = inventoryService.addInventory(inventory);

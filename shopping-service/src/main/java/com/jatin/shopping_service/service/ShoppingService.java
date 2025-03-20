@@ -68,13 +68,13 @@ public class ShoppingService {
 		Product product = Product.builder()
 			.productName(inventoryDto.getProductName())
 			.productDescription(inventoryDto.getProductDescription())
-			.productPrice(inventoryDto.getPrice())
+			.productPrice(inventoryDto.getProductPrice())
 			.build();
 
 		Product createdProduct = productClient.createProduct(product);
 
 		Inventory inventory = Inventory.builder()
-			.productId(createdProduct.getId())
+			.productId(createdProduct.getProductId())
 			.quantity(inventoryDto.getQuantity())
 			.build();
 
@@ -143,15 +143,14 @@ public class ShoppingService {
 		});
 
 		Order order = Order.builder()
-			.customerId(customerId)
 			.lineItems(cart.getLineItems())
 			.build();
 
 		Order savedOrder = orderClient.createOrder(order);
 
 		CustomerOrder customerOrder = CustomerOrder.builder()
-			.customerId(customerId)
 			.orderId(savedOrder.getOrderId())
+			.customerId(customerId)
 			.build();
 
 		customerOrderRepository.save(customerOrder);

@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 
 import com.jatin.shopping_service.entity.Product;
 
-@FeignClient(name = "product-service")
+@FeignClient(name = "Product-Catalogue-Service")
 public interface ProductClient {
 
 	@GetMapping("/api/products")
